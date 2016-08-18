@@ -47,6 +47,16 @@
 
   <body>
 
+    <script type="text/javascript">
+        mixpanel.track("Page viewed", {
+          "Event": "Page viewed",
+          "Page" : "Folk",
+          "Path" : window.location.pathname,
+          "Genres seen" : "Folk"
+        })
+      });
+    </script>
+
     <script>
       $(document).ready(function(){
           $("#rock-text").hide();

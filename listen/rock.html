@@ -46,10 +46,13 @@
   <body>
 
     <script type="text/javascript">
-    mixpanel.track('View Page', {
-      'Page': 'Rock', 
-      "Version": 1.0,
-      "$ip":0})
+        mixpanel.track("Page viewed", {
+          "Event": "Page viewed",
+          "Page" : "Rock",
+          "Path" : window.location.pathname,
+          "Genres seen" : "Rock"
+        })
+      });
     </script>
 
     <script>

@@ -27,6 +27,15 @@
   <body>
 
     <script type="text/javascript">
+        mixpanel.track("Page viewed", {
+          "Event": "Page viewed",
+          "Page" : "Registration",
+          "Path" : window.location.pathnameer
+        })
+      });
+    </script>
+
+    <script type="text/javascript">
       mixpanel.register_once({"Account Created Date": new Date().toISOString()});
 
       mixpanel.register({
