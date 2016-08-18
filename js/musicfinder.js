@@ -8,7 +8,7 @@ for(h=0;h<k.length;h++)e(d,k[h]);a._i.push([b,c,f])};a.__SV=1.2;b=e.createElemen
 
 //If the hostname is anything other than your production domain, initialize the Mixpanel library with your Development Token
 if (window.location.hostname.toLowerCase().search(productionHost) < 0) {
-    mixpanel.init(devToken);
+    mixpanel.init(devToken, {cross_subdomain_cookie : false﻿});
 } else {
-    mixpanel.init(prodToken);
+    mixpanel.init(prodToken, {cross_subdomain_cookie : false﻿});
 }
